@@ -1,0 +1,30 @@
+[
+    {
+        "id":"1",
+        "img":"https://templates.hibootstrap.com/hemo/default/assets/img/gallery/gallery-img1.jpg",
+        "title":"Royal Triplex House and It's All Details at a Glance",
+        "details":"We have a lot of good property and one of that is this property and for that we have arranged a catalogue for your. Please click on below!",
+        "name":"Triplex"
+    },
+    {
+        "id":"2",
+        "img":"https://templates.hibootstrap.com/hemo/default/assets/img/gallery/gallery-img2.jpg",
+        "title":"Royal Duplex House and It's All Details at a Glance",
+        "details":"We have a lot of good property and one of that is this property and for that we have arranged a catalogue for your. Please click on below!",
+        "name":"Duplex"
+    },
+    {
+        "id":"3",
+        "img":"https://templates.hibootstrap.com/hemo/default/assets/img/gallery/gallery-img3.jpg",
+        "title":"Multiplex House and It's All Details at a Glance",
+        "details":"We have a lot of good property and one of that is this property and for that we have arranged a catalogue for your. Please click on below!",
+        "name":"Multiplex"
+    },
+    {
+        "id":"4",
+        "img":"https://templates.hibootstrap.com/hemo/default/assets/img/gallery/gallery-img4.jpg",
+        "title":"Luxury House and It's All Details at a Glance",
+        "details":"We have a lot of good property and one of that is this property and for that we have arranged a catalogue for your. Please click on below!",
+        "name":"Luxury"
+    }
+]

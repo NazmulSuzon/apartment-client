@@ -1,0 +1,46 @@
+[
+    {   
+        "key":"1",
+        "img":"https://templates.hibootstrap.com/hemo/default/assets/img/property/property-img1.jpg",
+        "size":"1200 Sq. feet",
+        "title":"Luxury Apartment",
+        "location":"60 Salt Lake, UK",
+        "dining":"01",
+        "bed":"04",
+        "bathroom":"03",
+        "price":"$1200/m"
+    },
+    {   
+        "key":"2",
+        "img":"https://templates.hibootstrap.com/hemo/default/assets/img/property/property-img2.jpg",
+        "size":"1450 Sq. feet",
+        "title":"Renovated Apartment",
+        "location":"60 Iffy road, USA",
+        "dining":"01",
+        "bed":"04",
+        "bathroom":"03",
+        "price":"$1400/m"
+    },
+    {   
+        "key":"3",
+        "img":"https://templates.hibootstrap.com/hemo/default/assets/img/property/property-img3.jpg",
+        "size":"1250 Sq. feet",
+        "title":"Night Valley Apartment",
+        "location":"11 Station Road, USA",
+        "dining":"01",
+        "bed":"03",
+        "bathroom":"02",
+        "price":"$1200/m"
+    },
+    {   
+        "key":"4",
+        "img":"https://templates.hibootstrap.com/hemo/default/assets/img/property/property-img4.jpg",
+        "size":"1250 Sq. feet",
+        "title":"Luxury Apartment",
+        "location":"Dhanmodi 15, Dhaka, Ban",
+        "dining":"01",
+        "bed":"03",
+        "bathroom":"02",
+        "price":"$800/m"
+    }
+]

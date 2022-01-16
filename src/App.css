@@ -1,6 +1,10 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
+
+
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +39,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.primary-clr{
+  color: rgb(253,137,128)!important;
+}
+.primary-bg-clr{
+  background-color: rgb(253,137,128)!important;
+}
+.second-bg-clr{
+  background-color: rgb(254,249,235)!important;
 }

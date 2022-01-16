@@ -1,0 +1,10 @@
+.features{
+    background-color: rgb(254,249,235);
+}
+.features:hover{
+    background-color: white;
+}
+.read-more-btn:hover{
+    /* color: rgb(253,137,128)!important; */
+    background-color: rgb(253,137,128)!important;
+}

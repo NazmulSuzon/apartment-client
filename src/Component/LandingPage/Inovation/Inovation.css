@@ -1,0 +1,20 @@
+.innovation{
+    position: absolute;
+    z-index: 35;
+    top: 40px;
+}
+.innovation-shape{
+    position: absolute;
+    left: 570px;
+    z-index: -2;
+    
+}
+.innovation-shape2{
+    position: absolute;
+    right: 725px;
+    top: 475px;
+    z-index: -2;
+}
+.innovation-offer:hover{
+    color:rgb(253,137,128) !important;
+}
