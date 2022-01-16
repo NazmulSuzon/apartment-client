@@ -8,7 +8,10 @@ const Property = () => {
   const [property, setProperty] = useState([]);
 
   useEffect(() => {
-    setProperty(PropertyData);
+    const url = `http://localhost:5000/properties`
+    fetch(url)
+    .then(res => res.json())
+    .then(data => setProperty(data))
   }, []);
 
   const settings = {
@@ -21,7 +24,7 @@ const Property = () => {
   };
 
   return (
-    <div style={{ backgroundColor: "rgb(254,249,235)" }}>
+    <div name="property" style={{ backgroundColor: "rgb(254,249,235)" }}>
       <p className="primary-clr text-center pt-5 fs-5">OUR PROPERTY</p>
       <h2 className="text-center fw-bold">
         Our Property and Its Availabilities <br /> and All Other Details

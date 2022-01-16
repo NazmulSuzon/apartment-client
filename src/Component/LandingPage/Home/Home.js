@@ -8,6 +8,7 @@ import Inovation from '../Inovation/Inovation';
 import OurTeam from '../OurTeam/OurTeam';
 import Blog from '../Blog/Blog';
 import Footer from '../Footer/Footer';
+import Contact from '../Contact/Contact';
 
 const Home = () => {
     return (
@@ -20,6 +21,7 @@ const Home = () => {
             <Inovation></Inovation>
             <OurTeam></OurTeam>
             <Blog></Blog>
+            <Contact></Contact>
             <Footer></Footer>
         </div>
     );

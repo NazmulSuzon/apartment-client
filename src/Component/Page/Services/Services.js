@@ -9,7 +9,10 @@ const Services = () => {
   const [serviceData, setServiceData] = useState([]);
 
   useEffect(() => {
-    setServiceData(services);
+    const url = `http://localhost:5000/services`
+    fetch(url)
+    .then(res => res.json())
+    .then(data => setServiceData(data))
   }, []);
 
   return (

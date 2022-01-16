@@ -13,7 +13,7 @@ const Gallery = () => {
   const [key, setKey] = useState('triplex');
 
   return (
-    <div style={{ backgroundColor: "rgb(254,249,235)" }}>
+    <div name="gallery" style={{ backgroundColor: "rgb(254,249,235)" }}>
       <Container>
         <p className="primary-clr text-center pt-5 fs-5">PREVIEW GALLERY</p>
         <h2 className="text-center fw-bold">Lets See All of Our Resources at a Glance</h2>

@@ -6,7 +6,7 @@ import img3 from "../../../images/team/team-img3.jpg";
 
 const OurTeam = () => {
   return (
-    <div className="second-bg-clr">
+    <div name="team" className="second-bg-clr">
       <p className="primary-clr text-center pt-5 fs-5">Our Team</p>
       <h2 className="text-center fw-bold mb-4">Let's Meet Our Expert team</h2>
       <Container>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import logo from "../../../images/logo.png";
 import useAuth from "../../hooks/useAuth";
 
@@ -18,42 +18,41 @@ const NavigationBar = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/home" className="primary-clr">
+              <Nav.Link href="/home" className="primary-clr fw-bold">
                 Home
               </Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
+              <Nav.Link><Link activeClass="active-class" spy={true} className="text-decoration-none text-dark" offset={-55} exact to="about" smooth={true} duration={800}>About</Link></Nav.Link>
               <NavDropdown title="Pages" id="collasible-nav-dropdown">
                 <NavDropdown.Item>
-                  <Link>Appointment</Link>
+                  <Nav.Link><Link activeClass="active-class" spy={true} className="text-decoration-none text-dark" offset={-55} exact to="property" smooth={true} duration={800}>Property</Link></Nav.Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <Link>Property</Link>
+                  <Nav.Link><Link activeClass="active-class" spy={true} className="text-decoration-none text-dark" offset={-55} exact to="features" smooth={true} duration={800}>Features</Link></Nav.Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <Link>Gallery</Link>
+                  <Nav.Link><Link activeClass="active-class" spy={true} className="text-decoration-none text-dark" offset={-55} exact to="gallery" smooth={true} duration={800}>Gallery</Link></Nav.Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <Link>Team</Link>
+                  <Nav.Link><Link activeClass="active-class" spy={true} className="text-decoration-none text-dark" offset={-55} exact to="inovation" smooth={true} duration={800}>Inovation</Link></Nav.Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <Link to="/about">About</Link>
+                  <Nav.Link><Link activeClass="active-class" spy={true} className="text-decoration-none text-dark" offset={-55} exact to="team" smooth={true} duration={800}>Our Team</Link></Nav.Link>
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link>
-                <Link to="/services" className="text-decoration-none text-dark">
-                  Services
-                </Link>
-              </Nav.Link>
+              <Nav.Link href="/services">Services</Nav.Link>
 
-              <Nav.Link href="/about">Blog</Nav.Link>
-              <Nav.Link href="/about">Shop</Nav.Link>
-              <Nav.Link href="/about">Contact</Nav.Link>
-              
+              <Nav.Link href="/blog"><Link activeClass="active-class" spy={true} className="text-decoration-none text-dark" offset={-55} exact to="blog" smooth={true} duration={800}>Blog</Link></Nav.Link>
+              <Nav.Link href="/blog"><Link activeClass="active-class" spy={true} className="text-decoration-none text-dark" offset={-55} exact to="contact" smooth={true} duration={800}>Contact</Link></Nav.Link>
             </Nav>
             <Nav>
               {user?.email ? (
                 <>
-                <Link to="/dashboard" className="text-decoration-none primary-clr me-3 my-auto fs-5 fw-bold">Dashboard</Link>
+                  <Nav.Link
+                    href="/dashboard"
+                    className="text-decoration-none primary-clr me-3 my-auto fs-5 fw-bold"
+                  >
+                    Dashboard
+                  </Nav.Link>
                   <Button
                     onClick={logOut}
                     className="button primary-bg-clr border-0"
@@ -68,18 +67,18 @@ const NavigationBar = () => {
                 </>
               ) : (
                 <>
-                  <Link
-                    to="/login"
+                  <Nav.Link
+                    href="/login"
                     className="text-decoration-none text-light button primary-bg-clr px-4 py-2 rounded"
                   >
                     Login
-                  </Link>
-                  <Link
-                    to="/register"
+                  </Nav.Link>
+                  <Nav.Link
+                    href="/register"
                     className="text-decoration-none text-light button primary-bg-clr px-4 py-2 rounded ms-3"
                   >
                     Register
-                  </Link>
+                  </Nav.Link>
                 </>
               )}
 

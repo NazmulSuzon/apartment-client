@@ -10,7 +10,7 @@ import './Features.css'
 
 const Features = () => {
   return (
-    <Container>
+    <Container name="features">
       <p className="primary-clr text-center pt-5 fs-5">Features</p>
       <h2 className="text-center fw-bold">Our Property Features</h2>
       <Row className="g-4 my-5">

@@ -5,7 +5,7 @@ import './About.css'
 
 const About = () => {
   return (
-    <Container className="my-5">
+    <Container name="about" className="my-5">
       <Row>
         <Col xs={12} md={7}>
           <img className="img-fluid" src={img} alt="" />

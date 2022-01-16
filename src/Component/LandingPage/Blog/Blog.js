@@ -8,7 +8,7 @@ import './Blog.css'
 
 const Blog = () => {
   return (
-    <div>
+    <div name="blog">
       <p className="primary-clr text-center pt-5 fs-5">BLOG</p>
       <h2 className="text-center fw-bold">Latest Blog Post</h2>
       <Container className="mt-4">

@@ -7,7 +7,7 @@ import "./Inovation.css";
 
 const Inovation = () => {
   return (
-    <Container style={{width:"100%", height:"650px"}} className="mb-5">
+    <Container name="inovation" style={{width:"100%", height:"650px"}} className="mb-5">
       <Row>
         <Col style={{position:"relative"}} sm={8}>
             <img style={{width:"700px"}} src={inovation} className="innovation" alt="" />
