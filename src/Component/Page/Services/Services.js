@@ -9,7 +9,7 @@ const Services = () => {
   const [serviceData, setServiceData] = useState([]);
 
   useEffect(() => {
-    const url = `http://localhost:5000/services`
+    const url = `https://peaceful-ridge-61147.herokuapp.com/services`
     fetch(url)
     .then(res => res.json())
     .then(data => setServiceData(data))

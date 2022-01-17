@@ -8,7 +8,7 @@ const Property = () => {
   const [property, setProperty] = useState([]);
 
   useEffect(() => {
-    const url = `http://localhost:5000/properties`
+    const url = `https://peaceful-ridge-61147.herokuapp.com/properties`
     fetch(url)
     .then(res => res.json())
     .then(data => setProperty(data))
