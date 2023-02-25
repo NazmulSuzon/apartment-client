@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Card, CardGroup, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Slider from "react-slick";
-import PropertyData from "../../../FakeData/Property.json";
 import PropertyCard from "./PropertyCard";
 
 const Property = () => {
   const [property, setProperty] = useState([]);
 
   useEffect(() => {
-    const url = `https://peaceful-ridge-61147.herokuapp.com/properties`
+    const url = `https://apartment-server-production.up.railway.app/properties`
     fetch(url)
     .then(res => res.json())
     .then(data => setProperty(data))

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Pagination, Row } from "react-bootstrap";
 import "./Services.css";
-import services from "../../../FakeData/services.json";
 import { useState } from "react";
 import ServiceCard from "./ServiceCard";
 
@@ -9,7 +8,7 @@ const Services = () => {
   const [serviceData, setServiceData] = useState([]);
 
   useEffect(() => {
-    const url = `https://peaceful-ridge-61147.herokuapp.com/services`
+    const url = `https://apartment-server-production.up.railway.app/services`
     fetch(url)
     .then(res => res.json())
     .then(data => setServiceData(data))

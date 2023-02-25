@@ -83,7 +83,7 @@ const useFirebase = () => {
 
   const saveUser = (email, displayName) => {
     const user = {email, displayName};
-    fetch('https://peaceful-ridge-61147.herokuapp.com/users', {
+    fetch('https://apartment-server-production.up.railway.app/users', {
       method:'POST',
       headers: {
         'content-type': 'application/json'
